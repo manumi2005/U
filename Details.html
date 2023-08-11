@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL TURTLE HATCHARY</title>
+  <link rel="stylesheet" href="Details.css">
+  <link rel="stylesheet" href="international-telephone-input.css">
+  <script src="international-telephone-input.js"></script>
+  </head>
+
+  <body id="Detail-Page">
+
+    <!--Cover Page-->
+    <div class="cover-page">
+        <h1>Buy Tickets</h1>
+        <img src="Images/Home.jpg" alt="cover-page">
+      </div>
+      <div class="menu-bar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li ><a href="Buy-tickets.html">TICKETS</a></li>
+            <li class="active"><a href="Details.html">DETAILS </a></li>
+            <li ><a href="Payments.html">PAYMENTS </a></li>
+            <li><a href="Confirmation.html">CONFIRMATION </a></li>
+        </ul>
+        </div>
+
+    <main>
+         <div class="details">     
+             <h2>Enter Your Details</h2>
+         </div> 
+    <form id="detailsForm">
+         <div  class="Name">
+             <label for="fullName">Full Name :</label>
+            <input type="text" id="fullName"  placeholder="Enter Your Name" required>
+         </div>
+         <div class="Mobile-No">
+        <label for="mobileNumber">Mobile Number :</label>
+          <!-- Options for country codes -->
+          <!-- Add more options as needed -->
+        <input type="tel" id="mobileNumber" required>
+        <!--********************Add the java script part and css part here -->
+      </div>
+      <div class="Email">
+        <label for="email">Email :</label>
+        <input type="email" id="email"  placeholder="Enter Email" required>
+      </div>
+      <div class="Confirmemail">
+        <label for="confirmEmail">Confirm Email :</label>
+        <input type="email" id="confirmEmail"  placeholder="Confirm The Email" required >
+      </div>
+      <div class="gender">
+        <label for="gender">Gender :</label>
+        <select id="gender">
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <div class="button">
+        <button class="btn-add" id="Submit" onclick="AddData()">Add Data
+        </button>
+      </div>
+    </form>
+</main>
+<!--storage-->
+<hr>
+
+<section class="summary-section">
+    <div class="col-12">
+      <h2>Summary Table</h2>
+       <!--<table class="table table-boarderd" id="summayTable">
+            <thead>
+                <th>
+                    <tr>Full Name</tr>
+                    <tr>Mobie Number</tr>
+                    <tr>Email</tr>
+                    <tr>Confirm Email</tr>
+                    <tr>Gender</tr>
+                    <tr>Actions</tr>
+                </th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+   </div>
+    <button type="submit" id="continueBtn" disabled><a href="Payments.html">CONTINUE WITH PURCHASE</a></button>
+--> 
+
+
+ 
+
+    <table id="summaryTable">
+      <tr>
+        <th>Full Name</th>
+        <td id="fullNameSummary"></td>
+      </tr>
+      <tr>
+        <th>Mobile Number</th>
+        <td id="mobileNumberSummary"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td id="emailSummary"></td>
+      </tr>
+      <tr>
+        <th>Confirmation Email</th>
+        <td id="confirmaEmailSummary"></td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td id="genderSummary"></td>
+      </tr>
+    </table>
+  </div>
+  </section>
+
+<div class="button-2">
+  <button type="submit" id="continueBtn" disabled><a href="Payments.html">CONTINUE WITH PURCHASE</a></button> 
+ </div>
+
+   <!--Footer-->
+   <footer>
+    <div class="footer-content">
+        <h3> SL TURTLE HATCHARY</h3>
+        <p>Are you plan to donate turtles and protect turtles we kindly invite you to join with us?</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-squar"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright@ 2023 , SL TURTLE HATCHARY site by Manumi Vinulya</p>
+    </div>
+</footer>
+
+
+
+  <script src="Details.js"></script>
+
+    
+  </body>
+</html>
